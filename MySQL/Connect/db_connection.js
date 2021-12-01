@@ -1,7 +1,7 @@
 // npm init
 // npm install mysql
 var conf = require('./config')
-const mysql = require('mysql');
+var mysql = require('mysql');
 
 var connection = mysql.createConnection(conf.database);
 connection.connect(function (err) {
