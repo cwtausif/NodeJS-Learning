@@ -29,6 +29,6 @@ MongoClient.connect(url,function (err,db) {
     dbObject.collection("workers").insertMany(workers,function (err,res) {
         if(err) throw err;
         console.log("Number of workers registered: "+res.insertedCount);
-        db.close
+        db.close()
     })
 });
